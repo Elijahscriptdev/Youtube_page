@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+
 	line-height: 1;
 	font-size: 14px; 
 	font-family: 'Roboto', 'Arial', sans-serif;  
@@ -198,4 +199,59 @@ header img:hover {
 	transform: translateY(3px);
 	opacity: 0.4;
 }
+/**********************************middle section****************************/
+.middle-section{
+	margin: 0px 120px 0px 120px;
+}
 
+/* sectionleft*/
+
+.content iframe{
+	width: 600px;
+	height: 400px;
+}
+
+/* sectionright */
+.right-section{
+	width: 400px;
+	padding: 5px;
+	height: 900px;
+	float: right;
+	margin-top: -280px;
+}
+.right-section h2{
+	font-size: 30px;	
+}
+.video1{
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.video1 iframe{
+	width: 200px;
+	height: 100px;
+}
+.video1 .description{
+	margin-top: 6px;
+	padding-left: 15px;
+	width: auto;
+	float: right;
+}
+
+.video2{
+	display: flex;
+	flex-direction: row;
+}
+.video2 iframe{
+	padding-bottom: 15px;
+	width: 200px;
+	height: 100px;
+}
+.video2 .description{
+	padding-left: 15px;
+	width: auto;
+	float: right;
+}
