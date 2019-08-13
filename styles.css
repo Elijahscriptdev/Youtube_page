@@ -1,36 +1,208 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-* { box-sizing: border-box; }
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
 }
-body{
-    background-color: white;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-size: 14px; /*not part of Meyer's reset*/
+	font-family: 'Roboto', 'Arial', sans-serif;  /*not part of Meyer's reset*/
+	color: #212121;  /*not part of Meyer's reset*/
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/*********************added css reset***************************/
+a, a:hover, a:visited, a:active, a:focus {
+	text-decoration: none;
+	color: inherit;
 }
+
+/*********************end of css reset**********************/
+
+/*****************************************
+*******************GENERAL*****************
+*****************************************/
+
+i span {
+	display: none;
+}
+
+.grey-text {
+	color: #848484;
+}
+
+.bold-text {
+	font-weight: 500;
+}
+
+.grey-bott-border {
+	border-bottom: 0.5px solid #eeeeef;
+}
+
+.subtitles {
+	font-size: 0.9em;
+  line-height: 1.4em;
+  margin-bottom: 2px;
+	color: #848484;
+}
+
+.interact-options {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 0.9em;
+	letter-spacing: 0.3px;
+}
+
+.interact-options p {
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.interact-options i:hover {
+	color: #333;
+	cursor: pointer;
+}
+
+/*****************************************
+*******************Navbar*****************
+*****************************************/
 
 header {
-    background-color: purple;
-    display: flex;
-    padding: 15px;
+	width: 100%;
+	height: 60px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	color: #848484;
+	position: fixed;
+	z-index: 100;
+	background-color: #fff;
+	top: 0;
 }
-header, *{
-    margin: 20px;
+
+header i:hover,
+header img:hover {
+	cursor: pointer;
+	color: #000;
+	opacity: 1;
 }
+
 .logo img{
     height: 60px;
-    
+    margin: 0 20px;
+    margin-left: 20px;
+    margin-right: 130px;
 }
-.content iframe{
-    width: 800px;
-    height: 550px;
-    margin-left: 10px;
+
+/*****left******/
+.left-nav {
+	width: 20px;
+	margin-left: 25px;
 }
-.video1 iframe{
-    width: 400px;
-    height: 200px;
-    float: right;
-    margin-top: -500px;
+
+/*****center******/
+.search-bar {
+	flex-grow: 2;
+	display: flex;
 }
+
+.search-box{
+	width: 85%;
+	height: 27px;
+	padding: 2px 6px;
+	border-radius: 2px 0 0 2px;
+	border: 1px solid #d3d3d3;
+	background-color: #fff;
+}
+
+.search-bar input {
+	margin-right: 4px;
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	border: none;
+	font-size: 1.2em;
+	font-family: Roboto;
+}
+
+.search-btn {
+	border-top: 1px solid #d3d3d3;
+	border-right: 1px solid #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
+	width: 60px;
+	text-align: center;
+	background-color: #f8f8f8;
+	border-radius: 2px 0 0 2px;
+}
+
+.search-btn i {
+	width: auto;
+	padding: 8px 0;
+}
+
+/*****right******/
+
+.right-nav  {
+	width: 300px;
+	margin-right: 40px;
+	text-align: right;
+}
+
+.right-nav * {
+	margin-left: 25px;
+}
+
+.right-nav a {
+	margin-left: 35px;
+	color: #2793e6;
+	cursor: pointer;
+}
+
+.right-nav a:hover {
+	opacity: 0.6;
+}
+
+.right-nav img {
+	transform: translateY(3px);
+	opacity: 0.4;
+}
+
