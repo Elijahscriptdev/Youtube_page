@@ -224,9 +224,9 @@ header img:hover {
 .right-section{
 	width: 400px;
 	padding: 5px;
-	height: 900px;
+	height: auto;
 	float: right;
-	margin-top: -400px;
+	margin-top: -1200px;
 }
 .right-section h2{
 	font-size: 30px;	
@@ -271,6 +271,14 @@ section {
     margin-top: 10px;
     padding: 20px 0;
 }
+
+.thumbs1, .thumbs2, .thumbs3, .thumbs4, .thumbs5{
+	display: flex;
+	float: left;
+	margin-right: 360px;
+	margin-top: 7px;
+}
+
 
 .video-desc h1 {
     font-size: 1.6em;
@@ -346,6 +354,10 @@ section {
 
 .subscribe .comm-section{
     margin-left: 15px;
+}
+.comm-section{
+	display: flex;
+	flex-direction: column;
 }
 
 .pic1, .pic2, .pic3, .pic4, .pic5{
