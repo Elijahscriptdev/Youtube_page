@@ -14,7 +14,7 @@ Built with HTML and CSS
     **```https://github.com/Elijahscriptdev/Youtube_page.git```**
 
 ### USING THE PROJECT
-Click on this link to got to the github pages ***
+Click on this link to go to the github pages ***
 
 ### AUTHORS
 Ampaire Phemia and Elijah Obominuru
