@@ -1,0 +1,378 @@
+/* http://meyerweb.com/eric/tools/css/reset/v2.0 | 20110126 License: none (public domain)*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+
+	line-height: 1;
+	font-size: 14px; 
+	font-family: 'Roboto', 'Arial', sans-serif;  
+	color: #212121;  
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*********************added css reset***************************/
+a, a:hover, a:visited, a:active, a:focus {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*********************end of css reset**********************/
+
+/************************************************************GENERAL**********************************************************/
+
+i span {
+	display: none;
+}
+
+.grey-text {
+	color: #848484;
+}
+
+.bold-text {
+	font-weight: 500;
+}
+
+.grey-bott-border {
+	border-bottom: 0.5px solid #eeeeef;
+}
+
+.subtitles {
+	font-size: 0.9em;
+  line-height: 1.4em;
+  margin-bottom: 2px;
+	color: #848484;
+}
+
+.interact-options {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 0.9em;
+	letter-spacing: 0.3px;
+}
+
+.interact-options p {
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.interact-options i:hover {
+	color: #333;
+	cursor: pointer;
+}
+
+/************************************************************Navbar/ header**********************************************************/
+
+header {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	color: #848484;
+	position: fixed;
+	z-index: 100;
+	background-color: #fff;
+	top: 0;
+}
+
+header i:hover,
+header img:hover {
+	cursor: pointer;
+	color: #000;
+	opacity: 1;
+}
+
+.logo img{
+    height: 60px;
+    margin: 0 20px;
+    margin-left: 20px;
+    margin-right: 130px;
+}
+
+/******************************left*****************************/
+.left-nav {
+	width: 20px;
+	margin-left: 25px;
+}
+
+/*********************************search bar************************/
+.search-bar {
+	flex-grow: 2;
+	display: flex;
+}
+
+.search-box{
+	width: 85%;
+	height: 27px;
+	padding: 2px 6px;
+	border-radius: 2px 0 0 2px;
+	border: 1px solid #d3d3d3;
+	background-color: #fff;
+}
+
+.search-bar input {
+	margin-right: 4px;
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	border: none;
+	font-size: 1.2em;
+	font-family: Roboto;
+}
+
+.search-btn {
+	border-top: 1px solid #d3d3d3;
+	border-right: 1px solid #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
+	width: 60px;
+	text-align: center;
+	background-color: #f8f8f8;
+	border-radius: 2px 0 0 2px;
+}
+
+.search-btn i {
+	width: auto;
+	padding: 8px 0;
+}
+
+/*********************************right********************/
+
+.right-nav  {
+	width: 300px;
+	margin-right: 40px;
+	text-align: right;
+}
+
+.right-nav * {
+	margin-left: 25px;
+}
+
+.right-nav a {
+	margin-left: 35px;
+	color: #2793e6;
+	cursor: pointer;
+}
+
+.right-nav a:hover {
+	opacity: 0.6;
+}
+
+.right-nav img {
+	transform: translateY(3px);
+	opacity: 0.4;
+}
+/**********************************middle section****************************/
+.middle-section{
+	margin: 0px 120px 0px 120px;
+}
+
+/* sectionleft*/
+
+.content iframe{
+	width: 600px;
+	height: 400px;
+}
+
+/* left section */
+.left-section {
+    width: 620px;
+}
+/* .left-section.left-section */
+.content {
+	margin-top: 100px;
+}
+
+/* sectionright */
+.right-section{
+	width: 400px;
+	padding: 5px;
+	height: auto;
+	float: right;
+	margin-top: -1200px;
+}
+.right-section h2{
+	font-size: 30px;	
+}
+.video1{
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.video1 iframe{
+	width: 200px;
+	height: 100px;
+}
+.video1 .description{
+	margin-top: 6px;
+	padding-left: 15px;
+	width: auto;
+	float: right;
+}
+
+.video2{
+	display: flex;
+	flex-direction: row;
+}
+.video2 iframe{
+	padding-bottom: 15px;
+	width: 200px;
+	height: 100px;
+}
+.video2 .description{
+	padding-left: 15px;
+	width: auto;
+	float: right;
+}
+
+/*section*/
+
+.section-div {
+    margin-top: 10px;
+    padding: 20px 0;
+}
+
+.thumbs1, .thumbs2, .thumbs3, .thumbs4, .thumbs5{
+	display: flex;
+	float: left;
+	margin-right: 360px;
+	margin-top: 7px;
+}
+
+
+.video-desc p {
+    font-size: 1.6em;
+}
+
+.video-data {
+    display: flex;
+    margin: 20px 0;
+}
+
+.video-data *{
+    margin: 0 10px;
+}
+
+.subscribe {
+    display: flex;
+    position: relative;
+}
+
+.subscribe-btn {
+    background-color: red;
+    position: absolute;
+    left: 410px;
+    top: 5px;
+    width: 150px;
+    padding: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+}
+
+.profile-pic {
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border-radius: 50%;
+    background-image: url(img/profile-pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.profile-text{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.profile-text p {
+    margin: 4px;
+}
+
+.profile-text .bold {
+    font-weight: bold;
+}
+
+.show-more {
+    padding: 20px 20px 20px 0px;
+    border-bottom: 1px solid black;
+    color: grey;
+}
+
+.comments .comments-top {
+    display: flex;
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.comments-top * {
+    margin-right: 30px
+}
+
+.subscribe .comm-section{
+    margin-left: 15px;
+}
+.comm-section{
+	display: flex;
+	flex-direction: column;
+}
+
+.pic1, .pic2, .pic3, .pic4, .pic5{
+    padding: 10px;
+    margin: 5px;
+}
+/* @media only screen and (max-width: 1200px) {
+	body {
+		background-color: yellow;
+	}
+
+	.middle-section {
+		display: block;
+	}
+
+	.right-section {
+		display: block;
+		margin-top: 80px;
